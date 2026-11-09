@@ -1,0 +1,12 @@
+{
+  "name": "Crème et Crema",
+  "short_name": "Crème et Crema",
+  "icons": [
+    { "src": "assets/img/logo-256.png", "sizes": "256x256", "type": "image/png" },
+    { "src": "assets/img/logo-512.png", "sizes": "512x512", "type": "image/png" }
+  ],
+  "theme_color": "#1F3622",
+  "background_color": "#FBF5EC",
+  "display": "standalone",
+  "start_url": "./"
+}

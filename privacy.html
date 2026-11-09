@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="fr" translate="no">
+<head>
+  <meta charset="utf-8">
+  <meta name="google" content="notranslate">
+  <link rel="canonical" href="https://cremeetcrema.ca/privacy.html">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Confidentialité | Privacy — Crème et Crema</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css?v=20261108-8">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a href="./" class="brand js-home"><img src="assets/img/logo-256.png" alt="" width="44" height="44"><span class="brand-name">Crème et Crema</span></a>
+      <div class="header-actions"><button class="lang-btn" type="button" id="langBtn">English</button></div>
+    </div>
+  </header>
+  <main class="page"><div class="wrap narrow">
+    <section data-lang-block="fr">
+      <h1>Politique de confidentialité</h1>
+      <p>Dernière mise à jour : novembre 2026.</p>
+      <h2>Ce que nous recueillons</h2>
+      <p>Quand vous remplissez le formulaire de soumission, nous recueillons votre nom, votre courriel, votre téléphone et les détails de votre événement.</p>
+      <h2>Pourquoi</h2>
+      <p>Uniquement pour répondre à votre demande, préparer votre soumission et organiser votre événement. Nous ne vendons ni ne partageons vos renseignements à des fins de marketing.</p>
+      <h2>Où ils sont conservés</h2>
+      <p>Les demandes sont transmises par un service de formulaire en ligne et conservées dans notre boîte courriel. Ce service peut héberger les données à l'extérieur du Québec.</p>
+      <h2>Combien de temps</h2>
+      <p>Nous conservons vos renseignements le temps nécessaire pour traiter votre demande et respecter nos obligations comptables.</p>
+      <h2>Vos droits</h2>
+      <p>Vous pouvez demander à consulter, corriger ou supprimer vos renseignements en tout temps. Personne responsable de la protection des renseignements personnels : <span class="js-owner">Crème et Crema</span>, <span class="js-email">par le formulaire du site</span>.</p>
+    </section>
+    <section data-lang-block="en">
+      <h1>Privacy policy</h1>
+      <p>Last updated: November 2026.</p>
+      <h2>What we collect</h2>
+      <p>When you fill out the quote form, we collect your name, email, phone and event details.</p>
+      <h2>Why</h2>
+      <p>Only to reply to your request, prepare your quote and plan your event. We never sell or share your information for marketing.</p>
+      <h2>Where it's stored</h2>
+      <p>Requests go through an online form service and are kept in our email inbox. That service may store data outside Quebec.</p>
+      <h2>How long</h2>
+      <p>We keep your information as long as needed to handle your request and meet our accounting obligations.</p>
+      <h2>Your rights</h2>
+      <p>You can ask to see, correct or delete your information at any time. Person in charge of personal information: <span class="js-owner">Crème et Crema</span>, <span class="js-email">through the site's form</span>.</p>
+    </section>
+    <p><a href="./" class="btn btn-ghost js-home">← Crème et Crema</a></p>
+  </div></main>
+  <script src="assets/js/config.js?v=20261108-8"></script>
+  <script>
+    (function () {
+      var c = window.SITE_CONFIG || {}, l = "fr";
+      try { l = new URLSearchParams(location.search).get("lang") || localStorage.getItem("lang") || "fr"; } catch (e) {}
+      function set(x) { l = x === "en" ? "en" : "fr"; document.documentElement.lang = l; document.getElementById("langBtn").textContent = l === "fr" ? "English" : "Français"; document.querySelectorAll(".js-home").forEach(function (a) { a.setAttribute("href", l === "en" ? "en/" : "./"); }); try { localStorage.setItem("lang", l); } catch (e) {} }
+      if (c.email) document.querySelectorAll(".js-email").forEach(function (n) { n.innerHTML = '<a href="mailto:' + c.email + '">' + c.email + "</a>"; });
+      document.getElementById("langBtn").onclick = function () { set(l === "fr" ? "en" : "fr"); };
+      set(l);
+    })();
+  </script>
+</body>
+</html>
