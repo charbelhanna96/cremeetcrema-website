@@ -192,6 +192,18 @@
     if (CFG.phone) ul.appendChild(el("li", null, [el("a", { href: "tel:" + CFG.phone.replace(/[^\d+]/g, ""), text: CFG.phone })]));
     if (CFG.instagram) ul.appendChild(el("li", null, [el("a", { href: "https://instagram.com/" + CFG.instagram, target: "_blank", rel: "noopener", text: "@" + CFG.instagram })]));
     ul.appendChild(el("li", null, [el("a", { href: "#soumission", text: t("quote.title") })]));
+    // Quote form switched off (CFG.formEnabled === false): hide it, keep it in the page, show email and phone.
+    if (CFG.formEnabled === false && form) {
+      form.hidden = true;
+      var box = document.getElementById("quoteContact");
+      if (!box) { box = document.createElement("div"); box.id = "quoteContact"; box.className = "quote-contact"; form.parentNode.insertBefore(box, form); }
+      box.innerHTML = "";
+      box.appendChild(el("p", { text: t("quote.contact") }));
+      var qc = document.createElement("ul"); qc.className = "quote-contact-list";
+      if (CFG.email) qc.appendChild(el("li", null, [el("a", { href: "mailto:" + CFG.email, text: CFG.email })]));
+      if (CFG.phone) qc.appendChild(el("li", null, [el("a", { href: "tel:" + CFG.phone.replace(/[^\d+]/g, ""), text: CFG.phone })]));
+      box.appendChild(qc);
+    }
   }
 
   /* ---------- quote form ---------- */

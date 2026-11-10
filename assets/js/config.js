@@ -8,8 +8,8 @@ window.SITE_CONFIG = {
   businessName: "Crème et Crema",
 
   // Contact — shown in the footer and contact section when filled in.
-  email: "",            // e.g. "bonjour@cremeetcrema.ca"
-  phone: "",            // e.g. "514-555-0123"
+  email: "bonjour@cremeetcrema.ca",            // e.g. "bonjour@cremeetcrema.ca"
+  phone: "514-833-1846",            // e.g. "514-555-0123"
   instagram: "",        // handle without @, e.g. "cremeetcrema"
 
   // Quote form delivery.
@@ -18,6 +18,8 @@ window.SITE_CONFIG = {
   // 2) If this is empty but `email` is set, the form opens the visitor's
   //    email app with everything pre-filled.
   formEndpoint: "",
+  // false = the quote form is hidden (not deleted) and the quote section shows the email and phone instead.
+  formEnabled: false,
 
   // Minimum booking. This file is public, so the numbers stay empty while the
   // minimum is private. To show it on the site, fill both in and set showMinimums: true.
