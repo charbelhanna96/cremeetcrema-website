@@ -9,7 +9,7 @@ window.SITE_CONFIG = {
 
   // Contact — shown in the footer and contact section when filled in.
   email: "bonjour@cremeetcrema.ca",            // e.g. "bonjour@cremeetcrema.ca"
-  phone: "514-833-1846",            // e.g. "514-555-0123"
+  phone: "514-558-2883",            // e.g. "514-555-0123"
   instagram: "",        // handle without @, e.g. "cremeetcrema"
 
   // Quote form delivery.
